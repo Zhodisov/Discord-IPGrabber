@@ -1,0 +1,113 @@
+app:
+  secret_key: ""  # Same key for the Discord config.yaml
+  remember_cookie_duration: 10 
+  maintenance_mode: false
+  github_mode: true
+database:
+  host: ""
+  user: ""
+  password: ""
+  name: "safemarket"
+domains:
+  order:
+    - safemarket.xyz
+    - safemarket.lol
+    - lamoukate.lol
+    - outmareine.lol
+  data:
+    safemarket.xyz:
+      - api-v2.safemarket.xyz
+      - cdn.safemarket.xyz
+      - cdn-assets.safemarket.xyz
+      - auth.safemarket.xyz
+      - status.safemarket.xyz
+      - support.safemarket.xyz
+    outmareine.lol: []
+    safemarket.lol: []
+    lamoukate.lol:
+      - discord.lamoukate.lol
+      - cdn.lamoukate.lol
+      - parser.lamoukate.lol
+      - bin.lamoukate.lol
+      - cpp.lamoukate.lol
+
+github:
+  personal_access_token: ""
+  repo_name: "Zhodisov/SafeMarket-Update" # outdated
+  new_repo_name: "Zhodisov/NEW-SAFEMARKET-JSON" # outdated
+  repo_ip_routes: "Zhodisov/PUBLIC" # outdated
+  paths:
+    config: "config.json" # outdated
+    sumoners_wars: "LUA/sumoners_wars.lua" # outdated
+    abonnements: "abonnements.json" # outdated
+    database_changes: "database_changes.json" # outdated
+    key_obfuscation: "key_obfuscation.json" # outdated
+    key_gui: "key_gui.json" # outdated
+    key_second: "keys.json" # outdated
+    key_gui_second: "users.json" # outdated
+    key_gui_troisieme: "users-android.json" # outdated
+    key_website: "key_web.json" # outdated
+    hash: "hash.json" # outdated
+    errors: "errors.json" # outdated
+    defaults: "defaults.json" # outdated
+    update_info: "update_info.json" # outdated
+    notifications: "notification.json" # outdated
+    visits: "visits.json" # outdated
+    routes: "ANTI/routes.txt" # outdated
+    ip: "ANTI/ip.txt" # outdated
+    routes_deux: "routes.txt" # outdated
+    ip_deux: "ip.txt" # outdated
+    admin: "safemarket/admin_users.json" # outdated
+discord:
+  webhook_url: "" # Webhook yapp
+  webhook_url_discord: ""
+  webhook_inscription: ""
+  bot_token: ""
+
+paypal:
+  api_key: ""
+  secret_key: ""
+
+captcha:
+  store: {}
+  option: 1
+  difficulties:
+    simple:
+      font_size: 45
+      distortion_level: 0.1
+    easy:
+      font_size: 40
+      distortion_level: 0.2
+    medium:
+      font_size: 35
+      distortion_level: 0.3
+    hard:
+      font_size: 30
+      distortion_level: 0.4
+    difficult:
+      font_size: 25
+      distortion_level: 0.5
+    hardcore:
+      font_size: 20
+      distortion_level: 0.6
+
+keys:
+  expiration_duration: 1
+  keys_file: "keys.json"
+
+errors:
+  codes: [400, 401, 403, 404, 405, 500]
+
+image:
+  roboto_font_path: "/utils/polices/Roboto-Black.ttf"
+  captcha_background_color: [14, 14, 14]
+  captcha_letter_color: [51, 206, 126]
+  line_color: [51, 206, 126]
+  spacing: 5
+
+website_ressource:
+  logoUrl: ""
+  backgroundUrl: ""
+  githubUrl: "https://github.com/Zhodisov"
+  discordUrl: "https://safemarket.xyz/discord"
+  supportEmail: "mailto:support-checkout@safemarket.xyz"
