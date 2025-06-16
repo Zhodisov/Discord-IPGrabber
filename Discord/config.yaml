@@ -1,0 +1,85 @@
+app:
+  secret_key: ""
+  remember_cookie_duration: 10 
+  maintenance_mode: false
+  
+github:
+  personal_access_token: ""
+  repo_name: "Zhodisov/SafeMarket-Update" # Not Used Anymore
+  new_repo_name: "Zhodisov/NEW-SAFEMARKET-JSON" # Not Used Anymore
+  repo_ip_routes: "Zhodisov/PUBLIC" # Not Used Anymore
+  paths:
+    config: "config.json"
+    sumoners_wars: "LUA/sumoners_wars.lua"
+    abonnements: "abonnements.json"
+    database_changes: "database_changes.json"
+    key_obfuscation: "key_obfuscation.json"
+    key_gui: "key_gui.json"
+    key_second: "keys.json"
+    key_gui_second: "users.json"
+    key_gui_troisieme: "users-android.json"
+    key_website: "key_web.json"
+    hash: "hash.json"
+    errors: "errors.json"
+    defaults: "defaults.json"
+    update_info: "update_info.json"
+    notifications: "notification.json"
+    visits: "visits.json"
+    routes: "ANTI/routes.txt"
+    ip: "ANTI/ip.txt"
+    routes_deux: "routes.txt"
+    ip_deux: "ip.txt"
+    admin: "ADMIN/admin_users.json"
+discord:
+  webhook_url: "" # Webhook
+  webhook_url_discord: ""
+  webhook_inscription: ""
+  bot_token: "" # Bot Token
+
+paypal:
+  api_key: ""
+  secret_key: ""
+
+captcha:
+  store: {}
+  option: 1
+  difficulties:
+    simple:
+      font_size: 45
+      distortion_level: 0.1
+    easy:
+      font_size: 40
+      distortion_level: 0.2
+    medium:
+      font_size: 35
+      distortion_level: 0.3
+    hard:
+      font_size: 30
+      distortion_level: 0.4
+    difficult:
+      font_size: 25
+      distortion_level: 0.5
+    hardcore:
+      font_size: 20
+      distortion_level: 0.6
+
+keys:
+  expiration_duration: 1
+  keys_file: "keys.json"
+
+errors:
+  codes: [400, 401, 403, 404, 405, 500]
+
+image:
+  roboto_font_path: "/utils/polices/Roboto-Black.ttf"
+  captcha_background_color: [14, 14, 14]
+  captcha_letter_color: [51, 206, 126]
+  line_color: [51, 206, 126]
+  spacing: 5
+
+website_ressource:
+  logoUrl: ""
+  backgroundUrl: ""
+  githubUrl: "https://github.com/Zhodisov"
+  discordUrl: "https://safemarket.xyz/discord"
+  supportEmail: "mailto:support-checkout@safemarket.xyz"
