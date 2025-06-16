@@ -54,33 +54,9 @@ import numpy as np
 from user_agents import parse
 import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), 'Captcha'))
-from server.Captcha.Captcha import CaptchaGenerator
 import threading
 from flask_cors import CORS
 from apscheduler.schedulers.background import BackgroundScheduler
-from utils.ServerConfig.Database import (
-    get_db_connection,
-    get_admin_users,
-    get_routes_to_watch,
-    get_blocked_ips,
-    get_users,
-    get_subscriptions,
-    get_config,
-    save_users_data,
-    get_latest_version,
-    save_new_version,
-    log_update_request,
-    verify_program_signature,
-    get_version_file_path
-)
-ADMIN_ALLOWED_IPS = [
-    "2a01:cb22:862:f600:f59e:8bb5:3ab1:eb01",
-    "2a01:cb22:862:f600:c562:dc9:bda6:73fc",
-    "2a01:cb22:840:e100:d9b8:e6f3:6710:2412",
-    "127.0.0.1",
-    "51.91.15.32"
-
-]
 version = "7.9.2"
 #url_prefix = f'/v2/api-market/{version}'
 
